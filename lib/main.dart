@@ -2,7 +2,9 @@ import 'package:bloga/provider/count_provider.dart';
 import 'package:bloga/provider/favourite_provider.dart';
 import 'package:bloga/provider/slider_one_provider.dart';
 import 'package:bloga/provider/theme_changer_provider.dart';
+import 'package:bloga/screen/confeti_widget.dart';
 import 'package:bloga/screen/croper_image_example.dart';
+import 'package:bloga/screen/drager_example.dart';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
             darkTheme: ThemeData(
                 brightness: Brightness.dark,
                 iconTheme: IconThemeData(color: Colors.pink)),
-            home: CroperImageExample(),
+            home: ConfetiWidgetExample(),
           );
         }));
   }
