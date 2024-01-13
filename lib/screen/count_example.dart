@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:bloga/provider/count_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -22,7 +20,7 @@ class _CounterExampleState extends State<CounterExample> {
   Widget build(BuildContext context) {
     //final counterProvider =
     //Provider.of<CounterProvider>(context, listen: false);
-    print('build metho');
+
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -36,7 +34,6 @@ class _CounterExampleState extends State<CounterExample> {
       ),
       body: Center(
           child: Consumer<CounterProvider>(builder: (context, value, child) {
-        print('counsumer widget');
         return Text(
           value.count.toString(),
           style: TextStyle(fontSize: 30),
